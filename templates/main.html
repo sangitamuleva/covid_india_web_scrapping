@@ -19,11 +19,9 @@
 <nav class="grey darken-4">
 
     <div class="container">
-        <a href="/" class="brand-logo">COVID19 In India</a>
+        <a href="{%url 'home'%}" class="brand-logo">COVID19 In India</a>
 
-        <!--<ul id="nav-mobile" class="right">-->
-        <!--<li><a href="/">Home</a></li>-->
-        <!--</ul>-->
+
     </div>
 </nav>
 
@@ -31,51 +29,91 @@
 <br>
 <br>
 <div class="container">
+
+
+
     <div class="row">
-        <div class="col s3">
-            <div class="center ">
-                <h5 style="text-align:center;" class="amber-text ">Confirmed Cases </h5>
-                <i class="medium material-icons light-blue-text">flash_on</i>
+
+        <div class="col s6">
+
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <i class="medium material-icons light-blue-text">assignment_turned_in</i>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Confirmed Cases<i class="material-icons right">more_vert</i></span>
+
                 <p>{{c}}</p>
-
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Confirmed Cases<i class="material-icons right">close</i></span>
+                <p>Coronavirus is not the name of a single virus. Coronaviruses are a family of respiratory viruses, named for the crown-like spikes on their surface and Total confirmed case are {{c}}</p>
+              </div>
             </div>
-
         </div>
 
-        <div class="col s3">
-            <div class="center ">
-                <h5 style="text-align:center;" class="amber-text ">Recovered Cases</h5>
-                <i class="medium material-icons light-blue-text">flash_on</i>
+         <div class="col s6">
+
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <i class="medium material-icons light-blue-text">accessibility</i>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Recovered Cases<i class="material-icons right">more_vert</i></span>
+
                 <p>{{r}}</p>
-
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Recovered Cases<i class="material-icons right">close</i></span>
+                <p>Doctors are finding antibodies in ill and recovered patients, and that indicates the development of immunity and total recovered cases are{{r}}</p>
+              </div>
             </div>
-
         </div>
 
-        <div class="col s3">
-            <div class="center ">
-                <h5 style="text-align:center;" class="amber-text ">Active cases</h5>
-                <i class="medium material-icons light-blue-text">flash_on</i>
+         <div class="col s6">
+
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <i class="medium material-icons light-blue-text">accessible</i>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Active cases<i class="material-icons right">more_vert</i></span>
+
                 <p>{{a}}</p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Active cases<i class="material-icons right">close</i></span>
+                <p>The disease can spread from person to person through small droplets from the nose or mouth when a person with COVID-19 coughs or exhales and total active case are {{a}}</p>
+              </div>
             </div>
-
         </div>
-        <div class="col s3">
-            <div class="center ">
-                <h5 style="text-align:center;" class="amber-text ">Deaths </h5>
-                <i class="medium material-icons light-blue-text">flash_on</i>
+
+         <div class="col s6">
+
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <i class="medium material-icons light-blue-text">access_time</i>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Deaths <i class="material-icons right">more_vert</i></span>
+
                 <p>{{d}}</p>
-
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Deaths <i class="material-icons right">close</i></span>
+                <p>India's coronavirus death toll overtakes that of China and Total death case are {{c}}</p>
+              </div>
             </div>
-
         </div>
+
+
 
     </div>
 
     <div class="row">
 
             <div class="input-field col s8" >
-                <input type="text" name="search" placeholder="search" id="input_text">
+                <input type="text" name="search" placeholder="Search State" id="input_text">
 
             </div>
             <div class="input-field col s3">
